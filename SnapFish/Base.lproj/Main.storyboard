@@ -196,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="2613.5999999999999" y="79.610194902548727"/>
         </scene>
-        <!--View Controller-->
+        <!--Select User View Controller-->
         <scene sceneID="7lA-Ag-zQa">
             <objects>
-                <viewController id="eUw-T6-HYq" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="eUw-T6-HYq" customClass="SelectUserViewController" customModule="SnapFish" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ap8-e3-Sv9"/>
                         <viewControllerLayoutGuide type="bottom" id="zus-Br-F99"/>
@@ -207,12 +207,27 @@
                     <view key="view" contentMode="scaleToFill" id="1RY-bq-YJb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mxF-Gz-T4e">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mxF-Gz-T4e" secondAttribute="trailing" id="Vt4-8q-ftx"/>
+                            <constraint firstItem="mxF-Gz-T4e" firstAttribute="top" secondItem="ap8-e3-Sv9" secondAttribute="bottom" id="YyU-jC-HGT"/>
+                            <constraint firstItem="zus-Br-F99" firstAttribute="top" secondItem="mxF-Gz-T4e" secondAttribute="bottom" id="etY-fI-sS1"/>
+                            <constraint firstItem="mxF-Gz-T4e" firstAttribute="leading" secondItem="1RY-bq-YJb" secondAttribute="leading" id="kPj-Nz-BhG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="mxF-Gz-T4e" id="wQ6-Ve-xa7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ct-2K-4sK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3390" y="80"/>
+            <point key="canvasLocation" x="3097" y="39"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ifh-7g-BU6">

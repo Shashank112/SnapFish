@@ -16,6 +16,7 @@
 		F16B6CF11E489E3D00201811 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F16B6CF01E489E3D00201811 /* GoogleService-Info.plist */; };
 		F16B6CF31E492C1300201811 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B6CF21E492C1300201811 /* SnapsViewController.swift */; };
 		F16B6CF51E492EED00201811 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B6CF41E492EED00201811 /* PictureViewController.swift */; };
+		F16B6CF71E494DDB00201811 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B6CF61E494DDB00201811 /* SelectUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F16B6CF01E489E3D00201811 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F16B6CF21E492C1300201811 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		F16B6CF41E492EED00201811 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		F16B6CF61E494DDB00201811 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		FA3CE4AC908CE684B6D4BEB9 /* Pods-SnapFish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapFish.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapFish/Pods-SnapFish.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				F16B6CDE1E489C5A00201811 /* AppDelegate.swift */,
 				F16B6CE01E489C5A00201811 /* SignInViewController.swift */,
 				F16B6CE21E489C5A00201811 /* Main.storyboard */,
+				F16B6CF61E494DDB00201811 /* SelectUserViewController.swift */,
 				F16B6CF41E492EED00201811 /* PictureViewController.swift */,
 				F16B6CF21E492C1300201811 /* SnapsViewController.swift */,
 				F16B6CE51E489C5A00201811 /* Assets.xcassets */,
@@ -223,6 +226,7 @@
 			files = (
 				F16B6CE11E489C5A00201811 /* SignInViewController.swift in Sources */,
 				F16B6CF51E492EED00201811 /* PictureViewController.swift in Sources */,
+				F16B6CF71E494DDB00201811 /* SelectUserViewController.swift in Sources */,
 				F16B6CDF1E489C5A00201811 /* AppDelegate.swift in Sources */,
 				F16B6CF31E492C1300201811 /* SnapsViewController.swift in Sources */,
 			);

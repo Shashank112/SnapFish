@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>327398194110-m6ptpaf8qdqln3tm7f9ma501u481o6k3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.327398194110-m6ptpaf8qdqln3tm7f9ma501u481o6k3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD8B6xQtTP7MVVrXgAijT_J-kVYJ9Dy9NU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>327398194110</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Shash.App.SnapFish</string>
+	<key>PROJECT_ID</key>
+	<string>snapfish-13540</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snapfish-13540.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:327398194110:ios:5b2a05d2246f2095</string>
+	<key>DATABASE_URL</key>
+	<string>https://snapfish-13540.firebaseio.com</string>
+</dict>
+</plist>

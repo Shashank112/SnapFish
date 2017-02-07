@@ -106,7 +106,7 @@
         <!--Snaps View Controller-->
         <scene sceneID="ICP-IP-htt">
             <objects>
-                <viewController storyboardIdentifier="SnapsViewController" id="ydI-pE-D1P" customClass="SnapsViewController" customModule="SnapFish" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SnapsViewController" automaticallyAdjustsScrollViewInsets="NO" id="ydI-pE-D1P" customClass="SnapsViewController" customModule="SnapFish" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ice-ER-XdG"/>
                         <viewControllerLayoutGuide type="bottom" id="igU-im-bOd"/>
@@ -114,7 +114,19 @@
                     <view key="view" contentMode="scaleToFill" id="Sps-q0-FoA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z1W-26-PJO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="z1W-26-PJO" secondAttribute="trailing" id="Rbg-hw-0XT"/>
+                            <constraint firstItem="z1W-26-PJO" firstAttribute="top" secondItem="ice-ER-XdG" secondAttribute="bottom" id="iZN-0G-WiW"/>
+                            <constraint firstItem="igU-im-bOd" firstAttribute="top" secondItem="z1W-26-PJO" secondAttribute="bottom" id="spy-5a-zpD"/>
+                            <constraint firstItem="z1W-26-PJO" firstAttribute="leading" secondItem="Sps-q0-FoA" secondAttribute="leading" id="tFo-dH-gfA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k3Q-6J-NfD">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="tIz-dF-A8o">
@@ -128,6 +140,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="z1W-26-PJO" id="JLK-Pf-jCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pno-wd-uoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ct-2K-4sK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3097" y="39"/>
+            <point key="canvasLocation" x="3353" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ifh-7g-BU6">

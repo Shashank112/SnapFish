@@ -19,6 +19,7 @@
 		F16B6CF71E494DDB00201811 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B6CF61E494DDB00201811 /* SelectUserViewController.swift */; };
 		F16B6CF91E495D4D00201811 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B6CF81E495D4D00201811 /* User.swift */; };
 		F16B6CFD1E4977E100201811 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B6CFC1E4977E100201811 /* Snap.swift */; };
+		F16B6CFF1E4987FD00201811 /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16B6CFE1E4987FD00201811 /* ViewSnapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		F16B6CF61E494DDB00201811 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		F16B6CF81E495D4D00201811 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F16B6CFC1E4977E100201811 /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		F16B6CFE1E4987FD00201811 /* ViewSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
 		FA3CE4AC908CE684B6D4BEB9 /* Pods-SnapFish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapFish.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapFish/Pods-SnapFish.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 				F16B6CF41E492EED00201811 /* PictureViewController.swift */,
 				F16B6CF21E492C1300201811 /* SnapsViewController.swift */,
 				F16B6CF61E494DDB00201811 /* SelectUserViewController.swift */,
+				F16B6CFE1E4987FD00201811 /* ViewSnapViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				TargetAttributes = {
 					F16B6CDA1E489C5A00201811 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DD682XTCB4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -249,6 +253,7 @@
 				F16B6CE11E489C5A00201811 /* SignInViewController.swift in Sources */,
 				F16B6CF51E492EED00201811 /* PictureViewController.swift in Sources */,
 				F16B6CF91E495D4D00201811 /* User.swift in Sources */,
+				F16B6CFF1E4987FD00201811 /* ViewSnapViewController.swift in Sources */,
 				F16B6CF71E494DDB00201811 /* SelectUserViewController.swift in Sources */,
 				F16B6CFD1E4977E100201811 /* Snap.swift in Sources */,
 				F16B6CDF1E489C5A00201811 /* AppDelegate.swift in Sources */,
@@ -376,6 +381,7 @@
 			baseConfigurationReference = B751D1791472CD83375338E0 /* Pods-SnapFish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DD682XTCB4;
 				INFOPLIST_FILE = SnapFish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shash.App.SnapFish;
@@ -389,6 +395,7 @@
 			baseConfigurationReference = FA3CE4AC908CE684B6D4BEB9 /* Pods-SnapFish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DD682XTCB4;
 				INFOPLIST_FILE = SnapFish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Shash.App.SnapFish;

@@ -17,10 +17,13 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
     
     var imagePicker = UIImagePickerController()
     
+    var uuid = NSUUID().uuidString
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imagePicker.delegate = self
+        nextButton.isEnabled = false
         
     }
     
@@ -28,6 +31,7 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         imageView.image = image
         imageView.backgroundColor = UIColor.clear
+        nextButton.isEnabled = true
         
         imagePicker.dismiss(animated: true, completion: nil)
         
@@ -52,7 +56,7 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
         
         
-        imagesFolder.child("\(NSUUID().uuidString).jpg").put(imageData, metadata: nil, completion: {(metadata, error) in
+        imagesFolder.child("\(uuid).jpg").put(imageData, metadata: nil, completion: {(metadata, error) in
             print("We tried to upload!")
             if error != nil {
                 print("We had an error:\(error)")
@@ -70,28 +74,9 @@ class PictureViewController: UIViewController, UINavigationControllerDelegate, U
         let nextVC = segue.destination as! SelectUserViewController
         nextVC.imageURL = sender as! String
         nextVC.descrip = descriptionTextField.text!
+        nextVC.uuid = uuid
         
     }
     
-   
-    
-    
-    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
